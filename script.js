@@ -1,6 +1,7 @@
 const numbers = [10, 20, 30, 40]
 
-const [eka, ...loput] = numbers
+const eka = numerot[0]
+const loput = numerot.slice(1)
 
 console.log(eka);
 console.log(loput);
@@ -14,7 +15,9 @@ const opiskelija = {
   kaupunki: "Helsinki"
 }
 
-const {nimi, ika, ...muutTiedot} = opiskelija
+const nimi = Object.values(opiskelija)[0]
+const ika = Object.values(opiskelija)[1]
+const muutTiedot = {koulutus, kaupunki}
 
 console.log(nimi);
 console.log(ika);
